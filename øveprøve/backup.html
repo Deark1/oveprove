@@ -50,13 +50,13 @@
     <section>
         
         <article class="burj">
-            <a href="https://en.wikipedia.org/wiki/Burj_Khalifa"></a>
+            <a href="https://en.wikipedia.org/wiki/Burj_Khalifa"><img src="burj_stor.jpg" alt=""></a>
         </article>
         <article class="shanghai">
-            <a href="https://en.wikipedia.org/wiki/Shanghai_Tower"></a>
+            <a href="https://en.wikipedia.org/wiki/Shanghai_Tower"><img src="Shanghai_stor.jpg" alt=""></a>
         </article>
         <article class="makkah">
-            <a href="https://en.wikipedia.org/wiki/The_Clock_Towers"></a>
+            <a href="https://en.wikipedia.org/wiki/The_Clock_Towers"><img src="Makkah_stor.jpg" alt=""></a>
         </article>
         
       
@@ -92,45 +92,37 @@ td{
 tbody>tr:nth-child(odd){
     background-color: white;
 }
-    h1{padding: 35px;
+    h1{
         color: white;        
         background-color: #3f4259;
-        text-align: center;
         
     }
     main{
         border:solid #3f4259 8px;
         margin-right: 5px;
+
     }
     section{
-        height: 60vh;
-
+        height: 70vh;
         display: flex;
+        width: 675px;
     }
-    article {
-            flex: 1;
-            height: 400px;
-            background-size: cover;
-            background-position: center;
-            transition: 1s;
-            display: flex;
-            align-items: flex-end;
-        }
-        article:hover{
-            flex:1.5;
-            cursor: pointer;
-        }
+    article{
+        display: flex;
+        padding: 1rem;
+        flex: 4; 
  
-
-.burj{background-image: url(burj_stor.jpg);}
-.makkah{background-image: url(Makkah_stor.jpg);}
-.shanghai{background-image: url(Shanghai_stor.jpg);}
-
-a{display: block;
-height: 100%;
-width: 100%;
+    justify-content: center; 
+    align-items: center; 
+    margin: 10px;
 
 }
+article img{
+    max-width: 100%;
+    max-height: 100%; 
+    height: auto; 
+    display: block;
+    }
     
     
     
